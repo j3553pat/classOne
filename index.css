@@ -1,5 +1,57 @@
+body {
+  flex-wrap: wrap;
+  background-color: bisque;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.1fr 1fr 0.3fr;
+  grid-template-areas: 
+  "header header header"
+  "nav nav nav"
+  "aside main main"
+  "aside main main"
+  "footer footer footer";
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  font-family: 'Fredoka One';
+}
+
+#logo {
+  width: 15%;
+}
+
 h1 {
-    border-style: groove;
-    border-width: 12pt;
-    border-color: #FF9633;
+    text-align: center;
+     margin-left: 30%;
+     margin-right: 40%;
   }
+
+nav {
+    grid-area: nav;
+  }
+
+ul {
+  display: flex;
+  justify-content:space-evenly;
+  list-style-type: none;
+  font-family: 'Fredoka One', cursive;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+li {
+  transition: all 0.5s;
+}
+
+li:hover {
+  font-size: large;
+  padding: 2%;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
