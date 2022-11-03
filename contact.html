@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <title>Contact Page</title>
+</head>
+<header>
+  <h1>Contact Info</h1>
+</header>
+<body>
+  <nav>
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>Projects</li>
+      <li><a href="aboutPage.html">About Me</a></li>
+      <li><a href="contact.html">Contact Me</a></li> 
+      <li><a href="https://j3553pat.github.io/aca-grid-resume/" alt="Resume Page">Resume</a></li>
+  </ul>
+</nav>
+  <main>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" >
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" min="18" max="120" step="5">
+    </div>
+    <div>
+      <label for="date">Current Date</label>
+      <input type="date" name="date" id="date" min="2022-11-10">
+    </div>
+    <section class="heard">
+      <p>How did you hear about me?</p>
+      <div>
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" name="classmate" id="classmate">
+      </div>
+      <div>
+        <label for="resumesubmission">Resume Submission</label>
+        <input type="checkbox" name="resumesubmission" id="resumesubmission">
+      </div>
+      <div>
+        <label for="linkedin">LinkedIn</label>
+        <input type="checkbox" name="linkedin" id="linkedin">
+      </div>
+      <div>
+        <label for="codingrec">Coding Academy Rec</label>
+        <input type="checkbox" name="codingrec" id="codingrec">
+    </section>
+    <section>
+      <p>Would you like to contacted back?</p>
+      <div>
+        <label for="yes">Yes</label>
+        <input type="radio" name="contact" id="yes" value="yes">
+      </div>
+      <div>
+        <label for="no">No</label>
+        <input type="radio" name="contact" id="no" value="no">
+      </div>
+    </section>
+    <div>
+      <label for="comms">How would you like to be contacted?</label>
+      <select name="comms" id="comms">
+        <option label="Phone" value="Phone">Phone</option>
+        <option label="Email" value="Email">Email</option>
+      </select>
+    </div>
+    <section>
+      <article>
+      <label for="comments">If any comments, please insert in comment box.</label>
+      </article>
+      <textarea id="comments" name="comments" minlength="20" maxlength="500" cols="30" rows="10"></textarea>
+    <input type="hidden" name="hidden" value="hi">
+    <div>
+      <label for="file">Optional, but if you want to upload any files, here is a upload box.</label>
+      <input id="file" type="file" name="file">
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" required minlength="10">
+    </div>
+    <div>
+      <label for="url">URL</label>
+      <input type="url" name="url" id="url">
+    </section>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+  </main>
+  <!-- <script src="scripts.js"></script> -->
+  <script src="contact.js"></script>
+</body>
+</html>
