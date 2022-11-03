@@ -78,3 +78,29 @@ button:hover {
 footer {
     grid-area: footer;
 }
+
+@media (max-width: 576px) {
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .2fr 0.2fr 0.3fr;
+  grid-template-areas: 
+    "nav"
+    "header"
+    "main";
+    font-size: large;
+}
+
+header {
+  padding: 0px;
+}
+
+ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+li {
+  padding: 5px;
+}
+}
