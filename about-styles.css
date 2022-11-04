@@ -1,0 +1,45 @@
+body {
+    background-color: bisque;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: .4fr .2 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        ""
+        ""
+        "";
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    font-family: 'Fredoka One';
+    font-size: x-large;
+}
+
+ul {
+    display: flex;
+    justify-content:space-evenly;
+    list-style-type: none;
+    font-family: 'Fredoka One', cursive;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  li {
+    transition: all 0.4s;
+  }
+  
+  li:hover {
+    font-size: x-large;
+    padding: 2%;
+    background-color: black;
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: lightslategrey;
+  }
