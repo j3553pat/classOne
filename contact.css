@@ -79,7 +79,7 @@ footer {
     grid-area: footer;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 375px) {
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -102,5 +102,31 @@ ul {
 
 li {
   padding: 5px;
+}
+}
+
+@media (min-width: 800px ) {
+  body {display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .2fr 0.2fr 0.3fr;
+  grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main";
+    font-size: large;
+}
+
+body {
+  font-size:x-large;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  margin: 0%;
+  padding: 10px;
 }
 }
