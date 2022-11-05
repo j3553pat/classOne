@@ -1,13 +1,14 @@
 body {
+  background-color: bisque;
+  font-family: 'Fredoka One';
   display: grid;
-    background-color: bisque;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "aside main main"
-        "aside main main";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "aside main main"
+    "aside main main";
 }
 
 header {
@@ -22,12 +23,11 @@ nav {
 }
 
 aside {
-  padding-left: 15px;
   grid-area: aside;
   font-size: 60px;
-  font-family: 'Fredoka One';
-  border: 10px solid gray;
+  border: gray solid 10px;
   border-radius: 10%;
+  height: fit-content;
 }
 
 main {
@@ -36,8 +36,7 @@ main {
 
 .container {
   display: flex;
-  padding-left: 50px;
-
+  justify-content: center;
 }
 
 .card {
@@ -82,4 +81,54 @@ ul {
 
   a:visited {
     color: lightslategrey;
+  }
+
+  @media (max-width: 500px) {
+    body {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: .1fr .1fr .2fr .1fr;
+      grid-template-areas: 
+        "header"
+        "nav"
+        "aside"
+        "main";
+    }
+
+    aside {
+      text-align: center;
+      border: none;
+      font-size: 30px;
+    }
+
+.container {
+  flex-wrap: wrap;
+}
+    li { 
+      padding: 5px;
+      margin: 0%;
+    }
+  }
+
+  @media (max-width: 992px) {
+      body {
+        font-family: 'Fredoka One';
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+          "header header"
+          "nav nav"
+          "aside aside"
+          "main main";
+    }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      aside {
+        border: none;
+        font-size: 40px;
+      }
   }
